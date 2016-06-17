@@ -16,4 +16,7 @@ RUN git clone --recursive https://github.com/jfornoff/dotfiles
 WORKDIR /root/dotfiles
 RUN /bin/bash make.sh
 
+VOLUME /workspace
+WORKDIR /workspace
+
 CMD tmux -2
