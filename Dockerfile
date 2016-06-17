@@ -1,4 +1,5 @@
 FROM debian:jessie
+MAINTAINER Jan Fornoff <janfornoff@gmail.com>
 
 RUN apt-get update && apt-get -y install vim tmux git zsh curl
 RUN chsh -s $(which zsh)
